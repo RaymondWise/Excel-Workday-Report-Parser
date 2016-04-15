@@ -1,7 +1,7 @@
 #Excel-Workday-Report-Parser
-Written in *Lang-VBA*<p>
+
 MIT License<br>
-Copyright (c) <2016> <Raymond Wise> [Github Repo](https://github.com/RaymondWise/Excel-Weekly-Meal-Plan-Shopping-List-Creator) @raymondwise
+Copyright 2016 Raymond Wise @ [Github Source](https://github.com/RaymondWise/Excel-Weekly-Meal-Plan-Shopping-List-Creator) 
 
 
 

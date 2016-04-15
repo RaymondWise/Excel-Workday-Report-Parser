@@ -3,7 +3,7 @@
 MIT License<br>
 Copyright 2016 Raymond Wise @ [Github Source](https://github.com/RaymondWise/Excel-Weekly-Meal-Plan-Shopping-List-Creator) 
 
-
+[![Code Review](http://www.zomis.net/codereview/shield/?qid=125698)](http://codereview.stackexchange.com/q/125698/75587)
 
 Workday (workday.com) ERP's generated reports can be exported to excel as .xlsx. Due to the configuration of the tables within Workday, multiple lines of information are generated in the same cell.
 

@@ -18,7 +18,7 @@ Network Admin | John <br> Henrich <br> Ishmael
 Standard | Eve
 InfoSec|
 
-When this report is exported from Workday, it retains its table format regardless of the number of characters per cell. Ignoring that its possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed characters. If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. This code should yeild you this structure - 
+When this report is exported from Workday, it retains its table format regardless of the number of characters per cell. Ignoring that its possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed characters. If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. `ParseWorkdayColumnVertically()` code should yeild you this structure - 
 
 Security Group | Group Members
 ---------------|-----------------
@@ -34,6 +34,8 @@ Standard| Eve
 InfoSec|
 
 Now you can easily manipulate the data for analysis!
+
+There is also `ParseWorkdayColumnHorizontally` that will parse your data like `Text To Columns`
 
 This project is an attempt to document how I've tried to overcome the limitations of exporting Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT):
 

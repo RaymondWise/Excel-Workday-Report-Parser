@@ -35,15 +35,29 @@ InfoSec|
 
 Now you can easily manipulate the data for analysis!
 
-There is also `ParseWorkdayColumnHorizontally` that will parse your data like `Text To Columns`
+There is also `ParseWorkdayColumnHorizontally` that will parse your data like `Text To Columns` - 
 
-This project is an attempt to document how I've tried to overcome the limitations of exporting Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT):
 
->Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Security Group | Member 1 | Member 2 | Member 3
+----------------|---------|----------|---------
+Local Admin | Adam | Bob | Alice
+Power User |Jane 
+DBA | Becky
+Network Admin | John | Henrich | Ishmael
+Standard | Eve
+InfoSec|
 
->The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
->THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This project is an attempt to document how I've tried to overcome the limitations of exporting Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT).
 
 ##Looking to contribute?
 Please feel free to make a fork or raise an issue on my fork. I'm sure some data sets are more complicated than others and modifications may be needed.
+
+
+The MIT License (MIT)
+Copyright (c) <2016> <Raymond W Wise>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

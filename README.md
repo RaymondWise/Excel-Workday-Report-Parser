@@ -22,9 +22,13 @@ InfoSec|
 
 When this report is exported from Workday, it retains its table format regardless of the number of characters per cell. 
 
-![Export Example](/images/exportEX.png)
+Ignoring that it's possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed (LF) characters. 
 
-Ignoring that its possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed (LF) characters. If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. `ParseWorkdayColumnVertically()` code should yeild you this structure - 
+If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. 
+
+You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. 
+
+`ParseWorkdayColumnVertically()` code should yeild you this structure - 
 
 Security Group | Group Members
 ---------------|-----------------

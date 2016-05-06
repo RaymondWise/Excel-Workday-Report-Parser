@@ -7,7 +7,7 @@ Copyright 2016 Raymond Wise @ [Github Source](https://github.com/RaymondWise/Exc
 
 Language: VBA
 
-Workday (workday.com) ERP's generated reports can be exported to excel as .xlsx. Due to the configuration of the tables within Workday, multiple lines of information are generated in the same cell.
+[Workday](workday.com) ERP's generated reports can be exported to excel as `.xlsx` files. Due to the configuration of the tables within Workday, multiple lines of information are generated in the same cell.
 
 For instance, you have data structures like this -
 
@@ -20,7 +20,11 @@ Network Admin | John <br> Henrich <br> Ishmael
 Standard | Eve
 InfoSec|
 
-When this report is exported from Workday, it retains its table format regardless of the number of characters per cell. Ignoring that its possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed characters. If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. `ParseWorkdayColumnVertically()` code should yeild you this structure - 
+When this report is exported from Workday, it retains its table format regardless of the number of characters per cell. 
+
+![Export Example](/images/exportEX.png)
+
+Ignoring that its possible to exceed the character limit of a cell, the issue becomes cells with multiple data points separated by non-visible Line Feed (LF) characters. If you want to try to Text-To-Columns it on the LF you will overwrite data to the right and end up with LF cells if you don't treat concecutive delimiters as one. You could also do a Find&Replace on the LF, but that doesn't help with the parsing - it just makes it easier to see the terrible data structure. `ParseWorkdayColumnVertically()` code should yeild you this structure - 
 
 Security Group | Group Members
 ---------------|-----------------
@@ -49,7 +53,7 @@ Network Admin | John | Henrich | Ishmael
 Standard | Eve
 InfoSec|
 
-This project is an attempt to document how I've tried to overcome the limitations of exporting Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT).
+This project is an attempt to document how I've tried to overcome the limitations of exporting certain Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT).
 
 ##Looking to contribute?
 Please feel free to make a fork or raise an issue on my fork. I'm sure some data sets are more complicated than others and modifications may be needed.

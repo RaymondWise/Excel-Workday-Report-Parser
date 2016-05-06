@@ -74,6 +74,7 @@ Public Sub ParseIntoRows()
     Application.ScreenUpdating = True
 End Sub
 
+
 Private Sub CreateNewRows(ByRef partsOfString() As String, ByVal targetCellToParse As Range)
     targetCellToParse.Value = partsOfString(0)
     Dim i As Long
@@ -85,7 +86,6 @@ Private Sub CreateNewRows(ByRef partsOfString() As String, ByVal targetCellToPar
         End If
     Next i
 End Sub
-
 
 
 Private Function UserSelectRange(ByRef lastRow As Long) As Range

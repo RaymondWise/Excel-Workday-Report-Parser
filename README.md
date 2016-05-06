@@ -59,7 +59,12 @@ InfoSec|
 
 This project is an attempt to document how I've tried to overcome the limitations of exporting certain Workday reports into excel. I've found myself writing and rewriting code that's unmanagable, but the aim here is for it to be easily maintained. It is free for your use under the [MIT license](https://opensource.org/licenses/MIT).
 
-##Looking to contribute?
+##How to use this
+Within excel you must open the Visual Basic Editor (VBE) to import the `.bas` file. On Windows you can open the VBE by pressing <kbd>Alt</kbd> + <kbd>F11</kbd>. Once open, you can import the file by pressing <kbd>Ctrl</kbd> + <kbd>M</kbd>, browse to the downloaded file `WorkdayLineFeedMgr.bas` and click Open. Once imported, on the left side in the Project Explorer you will have a module called *WorkdayLineFeedMgr* that contains this code.
+
+Once imported, on Windows in excel you can press <kbd>Alt</kbd> + <kbd>F8</kbd> to run a macro. You can select either *ParseIntoColumns* or *ParseIntoRows*.
+
+###Looking to contribute?
 Please feel free to make a fork or raise an issue on my fork. I'm sure some data sets are more complicated than others and modifications may be needed.
 
 

@@ -4,6 +4,7 @@ MIT License<br>
 Copyright 2016 Raymond Wise @ [Github Source](https://github.com/RaymondWise/Excel-Weekly-Meal-Plan-Shopping-List-Creator) 
 
 [![Code Review](http://www.zomis.net/codereview/shield/?qid=125698)](http://codereview.stackexchange.com/q/125698/75587)
+2nd round [![Code Review](http://www.zomis.net/codereview/shield/?qid=125698)](http://codereview.stackexchange.com/questions/137854/parsing-excel-cells-containing-line-feed-characters)
 
 Language: VBA
 
